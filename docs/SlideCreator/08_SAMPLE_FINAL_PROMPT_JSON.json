@@ -1,0 +1,38 @@
+{
+  "prompt_version": "notebooklm_slide_prompt_json/1.0",
+  "generation_rules": {
+    "one_message_per_slide": true,
+    "bullets_max": 3,
+    "key_messages_max": 3,
+    "sources_policy": "list_urls_or_source_names_only",
+    "tone_and_style": {
+      "audience_level": "intermediate",
+      "tone": "business",
+      "japanese_writing_style": "desu_masu",
+      "design": "clean_corporate"
+    }
+  },
+  "deck": {
+    "title": "（記事から推定したタイトル）",
+    "audience": "社内エンジニア向け",
+    "format": "presenter_slides",
+    "language": "ja",
+    "slide_count_range": { "min": 8, "max": 14, "target": 10 },
+    "slides": [
+      {
+        "no": 1,
+        "title": "結論：◯◯が重要",
+        "objective": "発表の結論と価値を短時間で共有する",
+        "key_messages": ["結論は◯◯", "理由は3点", "次のアクションは△△"],
+        "on_slide_bullets": ["結論：◯◯", "理由：3点", "次：△△"],
+        "layout_template": "three_takeaways",
+        "visual": {
+          "idea": "3つの理由をカード形式の図解で示す",
+          "image_prompt": "16:9, clean corporate infographic, three cards, simple icons, minimal text, high readability"
+        },
+        "speaker_notes": "60〜90秒想定の話す台本要旨。根拠は記事とURL出典名を列挙する。",
+        "sources": ["article.md", "https://example.com/source1"]
+      }
+    ]
+  }
+}

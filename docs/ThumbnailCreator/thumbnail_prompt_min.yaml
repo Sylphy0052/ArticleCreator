@@ -1,0 +1,20 @@
+version: "1.0"
+locale: "ja-JP"
+
+image_config:
+  aspect_ratio: "16:9"
+
+brief:
+  output_count: 3
+
+visual:
+  style_family: "editorial-illustration"
+  style_keywords:
+    - "clean"
+    - "high contrast"
+    - "minimal background"
+    - "single clear subject"
+
+typography:
+  enabled: false
+  language: "ja"
